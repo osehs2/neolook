@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.map_container{padding-top: 100px; }
+
+.about{
+  border-top: 1px solid #474747;}
+.about h3{font-size: 1.5rem; font-weight: bold; margin-bottom: 40px;
+margin-top: 10px;}
+.about .p_star::before{content: ''; display: inline-block; clear: both;
+width: 11px; height: 11px;background: url(../img/front_point.png)no-repeat center/9px auto;}
+.about .p_star{font-size: 1.4rem; font-weight: 600; color:#474747;
+margin-bottom: 20px;}
+.about .img_box{height: 60px; margin-bottom: 90px;}
+
+.ab_txt_box li h4::before{content: "-"; display: inline-block; clear: both;}
+.ab_txt_box li h4{font-size: 1.3rem; font-weight: bold;
+margin-bottom: 10px;}
+.ab_txt_box li p{font-size: 1.2rem; margin-bottom: 20px; color:#555;}
+.ab_txt_box li strong{display: block; color:#333;
+  margin-bottom: 10px; font-weight: 500;}
+
+.ab_txt_box li{margin-bottom: 50px;}  
+
+.ab_txt_box h5{font-size: 1.4rem; margin-bottom: 20px;}
+.ab_txt_box h5::after{content: ''; display: inline-block; clear: both; margin-left: 5px;
+width: 13px; height: 10px; background: url(../img/down.png)no-repeat center /16px auto;}
+
+#daumRoughmapContainer1637207058953{margin-bottom: 20px; }
+
+
+@media (min-width:768px) {
+  .about h3{font-size: 2rem;}
+  .about .p_star{font-size: 1.8rem;}
+  .ab_txt_box li h4{font-size: 1.6rem;}
+  .ab_txt_box li p{font-size: 1.3rem;}
+  .ab_txt_box h5{font-size: 1.6rem;}
+
+
+}

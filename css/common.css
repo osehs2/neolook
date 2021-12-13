@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*공통으로 사용하는 css*/
+
+.clear::after{content: ''; display: block; clear: both;}
+.hidden{font-size: 0; color: transparent;}
+
+/*font 관련*/
+.font_bold{font-weight: 400 !important;}
+.font_color_wh{color:#fff !important;}
+
+.h_inner, .inner{padding:0 16px;}
+
+/*header*/
+
+header{width: 100%; height: 50px; background-color:#fff; position: fixed;
+z-index: 99; padding-top: 8px;}
+
+h1 a{display: block; width: 81px; height: 34px; background: url(../img/logo.png) no-repeat center /80px auto;
+ margin: 0 auto;}
+header .btn{position: absolute; font-size: 0; color: transparent;}
+
+.btn_open{width: 23px; height: 18px; background: url(../img/menu.png)no-repeat center/23px auto;
+ top:16px; left: 16px;}
+.btn_search{width: 32px; height: 35px; background: url(../img/search.png)no-repeat center/auto 18px;
+top:7px; right: 82px;}
+.btn_subscribe{width: 29px; height: 26px; background: url(../img/subscribe.png)no-repeat center /auto 18px;
+top:12px; right: 50px;}
+.btn_login{width: 28px; height: 28px; background: url(../img/login.png)no-repeat center/21px auto;
+top:10px; right: 16px;}
+
+nav{width: 132px; height: 270px; background-color: #c31536; position: absolute;
+top:0; padding:28px 0 0 16px; display: none;}
+nav h2{display: none;}
+nav li a{display: block;
+  color:#fff; font-size: 1.2rem; font-weight:bold; margin-bottom: 24px;}
+
+.btn_close{width: 18px; height: 18px; background: url(../img/close.png)no-repeat center/10px auto;
+position: absolute; top:12px; right: 6px;}
+
+nav li a:hover{color:#8e8e8e;}
+
+/*====================== footer 시작 =================*/
+footer{height: 80px; background-color: #5e5d5d; text-align: left;
+padding-top: 22px; position: relative;}
+footer span{
+  font-size: 1rem; color:#e7e7e7; }
+
+footer .f_sns{position: absolute; top:10px; right: 12px;}  
+footer .f_sns ul{display: flex;}
+footer .f_sns li a{display: block;
+  width:25px; height: 25px; background-color: salmon;}
+  footer .f_sns li .f_book{background: url(../img/mobile_facebook.png)no-repeat
+    center/cover; margin-right: 6px;}
+  footer .f_sns li .f_tit{background: url(../img/mobile_twitter.png)no-repeat
+    center/cover; margin-right: 6px;}
+  footer .f_sns li .f_email{background: url(../img/moble_email.png)no-repeat
+    center/cover; }
+    .f_logo{display: none;}
+  
+    footer .top a{width: 20px; height: 20px; background: rgba(196, 26, 58, 0.6)
+      url(../img/top.png)no-repeat center/13px auto;
+      border-radius: 50%; position: fixed; bottom:20px; right: 20px;}
+
+
+@media (min-width:768px){
+  footer{height: 120px; 
+    padding-top: 35px; padding-left: 80px;}
+  footer span{font-size: 1.4rem; }
+  footer .f_sns{display: none;}
+
+ .f_logo{display: block;}
+ .f_logo h1{width: 130px; height: 65px; 
+ position: absolute; top:22px; right:100px;
+background: url(../img/f_logo.png)no-repeat center/130px auto;}
+
+footer .top a{width: 30px; height: 30px; }
+
+}
+
+
+
+@media (min-width:1024px) {
+
+  header{height: 80px;  padding-top: 10px;}
+    
+  h1 a{width: 100px; height: 40px; background: url(../img/logo.png) no-repeat center /100px auto;
+  margin: 0;}
+  .h_inner{width: 1192px; margin: 0 auto; position: relative; padding: 0;}
+  .inner{width: 1024px; margin: 0 auto; position: relative; padding: 0;}
+  
+  nav{display: block; top: 16px; left: 216px; width: 850px; height: auto; padding: 0; 
+  background-color: transparent;}
+  nav ul{display: flex; justify-content: space-between;}
+  nav ul li a{color: #000; font-size: 1.5rem;}
+  .btn_close{display: none;}
+  .btn_open{display: none;}
+  .btn_search{display: none;}
+  .btn_subscribe{
+  top:11px;  right:61px;}
+  .f_logo h1{
+     top:-10px; right:100px;
+  }
+  
+
+}
+
+/*swiper */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
